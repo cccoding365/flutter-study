@@ -5,8 +5,18 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text('首页'),
+    return Scaffold(
+      appBar: AppBar(
+        leading: const Padding(
+          padding: EdgeInsets.all(5),
+          child: FlutterLogo(),
+        ),
+        title: const Text(
+          'Haiwell Cloud',
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+        ),
+        backgroundColor: Colors.blue,
+      ),
     );
   }
 }

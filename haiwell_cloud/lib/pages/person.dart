@@ -5,8 +5,10 @@ class Person extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text('我的页'),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('我的'),
+      ),
     );
   }
 }

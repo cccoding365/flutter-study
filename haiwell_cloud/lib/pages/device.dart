@@ -5,8 +5,13 @@ class Device extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text('设备页'),
+    return Scaffold(
+      appBar: AppBar(
+        leading: const Icon(Icons.search),
+        centerTitle: true,
+        title: const Text('设备'),
+        actions: const [Icon(Icons.add)],
+      ),
     );
   }
 }
